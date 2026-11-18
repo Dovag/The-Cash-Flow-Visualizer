@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <link rel="stylesheet" href="styles.css" />
+       
+    </head>
+    <body>
+        <h1 class="title">Cash-Flow Visualizer</h1>
+        <fieldset id="graphField">
+        <legend>Graph</legend>
+            <div id="graphScroll">
+                <h2 id="monthCount">Month 1</h2>
+            <canvas id="graph">
+            </canvas>
+            </div>
+            <button id="previousMonth" class="scrollButtons" type="button">Previous Month</button>
+            <button id="nextMonth" class="scrollButtons" type="button">Next Month</button>
+       </fieldset>
+         
+         <fieldset id="calendar">
+             <h1 class="curamTitle">Current Amount:</h1>
+             <h1 class="currentAmount" id="amountCounter">$0.00</h1>
+             <h3>Starting Money Amount</h3>
+                <input id="startingMoney" type="number" min="0" step="0.01" value="1000">
+             
+             <h3>Amount of days</h3>
+                <input id="amountOfDays" type="number" min="7" max="31" value="31">
+       
+             <div id="dayControls">
+        <h4>Add/Remove Day(s)</h4>
+           <button id="addDay">Add Day</button>
+           <button id="removeDay">Remove Day</button>
+        <button id="saveButton">Print All</button>
+        <button id="saveAs">Save as PDF</button>
+             </div>
+             <div id="dayCards"></div>
+        </fieldset>
+        <div id="printReport"></div>
+        <script src="script.js"></script>
+        <footer>2026</footer>
+    </body>
+</html>
